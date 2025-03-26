@@ -1,0 +1,44 @@
+.md-content {
+  --base-color: #5a8e54;
+  fieldset.think {
+    padding: 0.5rem;
+    border: 1px solid var(--base-color);
+    border-radius: 2px;
+    margin-bottom: 1em;
+    white-space: pre-wrap;
+    font-size: 0.85em;
+    line-height: 1.5;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    legend {
+      color: var(--base-color);
+      padding: 2px 10px;
+    }
+
+    summary {
+      background-color: var(--base-color);
+      padding: 2px 6px;
+      color: #fff;
+      border-radius: 2px;
+      &::before {
+        content: '展开';
+      }
+    }
+
+    details[open] > summary {
+      &::before {
+        content: '折叠';
+      }
+    }
+  }
+
+  pre[data-mermaid-rendered='true'] {
+    background-color: transparent !important;
+    > code {
+      display: none;
+    }
+  }
+}

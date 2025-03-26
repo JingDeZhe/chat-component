@@ -7,6 +7,7 @@ import { getPostProcess, getPreProcess } from './utils'
 import { postMermaid, preThink } from './process'
 import container from 'markdown-it-container'
 import type { RenderRule } from 'markdown-it/lib/renderer.mjs'
+import mathjax3 from 'markdown-it-mathjax3'
 
 const preProcess = getPreProcess()
 preProcess.register(preThink)
@@ -15,6 +16,7 @@ postProcess.register(postMermaid)
 
 export const markdown = new MarkdownIt()
 
+markdown.use(mathjax3)
 markdown.use(fromHighlighter(highlighter, { theme: 'one-dark-pro' }))
 markdown.use(container, 'think', {
   render: (tokens, idx, _options, env) => {

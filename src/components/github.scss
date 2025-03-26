@@ -181,12 +181,14 @@
   margin-bottom: 16px;
 }
 .md-content code {
-  font-family: 'Fira Code', Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: 'Maple Mono NF CN', 'Fira Code', Menlo, Monaco, Consolas,
+    'Courier New', monospace;
   font-size: 0.9em;
   color: #000;
   background-color: #eaeaea;
   border-radius: 3px;
   padding: 0.2em 0;
+  font-variant-ligatures: normal;
 }
 .md-content code::after,
 .md-content code::before {

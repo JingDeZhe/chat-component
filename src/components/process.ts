@@ -1,9 +1,4 @@
-import {
-  loadMermaid,
-  renderMermaid,
-  type PostProcess,
-  type PreProcess,
-} from './utils'
+import { renderMermaid, type PostProcess, type PreProcess } from './utils'
 
 /**将think标签替换成常规的::: think写法 */
 export const preThink: PreProcess = (text) => {

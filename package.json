@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@shikijs/markdown-it": "^3.2.1",
+    "clipboard-polyfill": "^4.1.1",
     "dompurify": "^3.2.4",
     "es-toolkit": "^1.32.0",
     "loadjs": "^4.3.0",
@@ -23,6 +24,7 @@
     "overlayscrollbars-vue": "^0.5.9",
     "pinia": "^3.0.1",
     "shiki": "^3.2.1",
+    "sweetalert2": "^11.17.2",
     "uuid": "^11.1.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"

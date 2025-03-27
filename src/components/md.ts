@@ -4,7 +4,7 @@ import { fromHighlighter } from '@shikijs/markdown-it'
 import { highlighter } from './shiki'
 import MarkdownIt from 'markdown-it'
 import { getPostProcess, getPreProcess } from './utils'
-import { postMermaid, preThink } from './process'
+import { postCodeTools, postMermaid, preThink } from './process'
 import container from 'markdown-it-container'
 import type { RenderRule } from 'markdown-it/lib/renderer.mjs'
 import mathjax3 from 'markdown-it-mathjax3'
@@ -12,7 +12,7 @@ import mathjax3 from 'markdown-it-mathjax3'
 const preProcess = getPreProcess()
 preProcess.register(preThink)
 const postProcess = getPostProcess()
-postProcess.register(postMermaid)
+postProcess.register(postMermaid).register(postCodeTools)
 
 export const markdown = new MarkdownIt()
 

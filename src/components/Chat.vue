@@ -37,12 +37,7 @@ onUnmounted(() => unwatchLoading?.())
 </script>
 
 <template>
-  <OverlayScrollbarsComponent
-    element="div"
-    :options="{ scrollbars: { autoHide: 'scroll' } }"
-    defer
-    class="md-wrapper"
-  >
+  <OverlayScrollbarsComponent element="div" :options="{ scrollbars: { autoHide: 'scroll' } }" defer class="md-wrapper">
     <div class="md-content" v-html="htmlText" ref="refContent"></div>
   </OverlayScrollbarsComponent>
 </template>

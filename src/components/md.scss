@@ -35,6 +35,34 @@
     }
   }
 
+  .cp-btn {
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 0.2rem 1rem;
+    background-color: #202020;
+    color: white;
+    cursor: pointer;
+  }
+
+  .code-tools {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.2rem;
+    background-color: #e6e6e6;
+    padding: 0.2rem;
+    border-radius: 6px;
+    > .language {
+      text-transform: uppercase;
+      font-family: 'Times New Roman', Times, serif;
+      margin-left: 1rem;
+    }
+
+    > .split {
+      margin-left: auto;
+    }
+  }
+
   pre[data-mermaid-rendered='true'] {
     background-color: transparent !important;
     > code {

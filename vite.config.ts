@@ -37,4 +37,21 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  build: {
+    target: 'esnext',
+    lib: {
+      entry: fileURLToPath(new URL('./src/lib.ts', import.meta.url)),
+      name: 'ChatComponent',
+      fileName: 'chat-component',
+      formats: ['es'],
+    },
+    rollupOptions: {
+      external: ['vue'],
+      output: {
+        globals: {
+          vue: 'Vue',
+        },
+      },
+    },
+  },
 })
